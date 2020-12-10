@@ -1,4 +1,4 @@
-	$(document).ready(function(){		
+		
 		var style = document.createElement('style');
 		var css = ".embeddedServiceHelpButton .helpButton .uiButton {"+
 			"background-color: #005290;"+
@@ -17,9 +17,7 @@
 		}
 		
 		document.body.appendChild(style);
-		$('body').append($('<script type="text/javascript" src="https://service.force.com/embeddedservice/5.0/esw.min.js"></script>'));
-	});
-
+		
 	var initESW = function(gslbBaseURL) {
 		embedded_svc.settings.displayHelpButton = true; //Or false
 		embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
